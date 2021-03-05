@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: waglobsbunodeboilerplt-config
+data:
+  ENV_CONFIGMAP1: placeholder1
+  ENV_CONFIGMAP2: placeholder2
+  config.yaml: |
+    server:
+      port: 8080
+    log:
+      LogEntry: LogEntry
+      logLevel: Debug
+      organization: wba
+      environment: Pharmacy
+      microservice: eapi-customer-rest
+      revision: v1_0_0
+      ApplicationID: harmony
+      entrypointORMicroserviceUrl: waglobsbunodeboilerpltfrontend
+      backendURL: waglobsbunodeboilerpltbackend
+    appinsights:
+      appinsightsneeded: N
+      key: 
+    db:
+      url: mongodb://localhost:27017/
